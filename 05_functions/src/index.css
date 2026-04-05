@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+h1{
+  height: 200px;
+  width: 200px;
+  margin: 5rem;
+  padding: 5rem;
+  background-color: pink;
+}
+button{
+  height: 50px;
+  width: 100px;
+  margin: 2rem;
+}
