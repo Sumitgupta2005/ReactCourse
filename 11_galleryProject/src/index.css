@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+/* .btn{
+  background-color: blue;
+  padding: 10px 20px;
+  color: white;
+  margin: 15px;
+  border-radius: 10px;
+} */
+
+/* full page */
+.app {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* button */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* image container */
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* images */
+.image {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
