@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-color: aqua;
+  color: black;
+}
+.bars{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;  /* any color you want */
+  color: white;
+  padding: 10px 20px;
+}
