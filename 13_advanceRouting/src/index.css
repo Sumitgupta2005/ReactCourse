@@ -30,3 +30,8 @@ html, body{
   color: white;
   padding: 10px 20px;
 }
+.aboutMe{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}

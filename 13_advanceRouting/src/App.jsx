@@ -5,23 +5,31 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Foot from './Pages/Foot'
 import NotFound from './Pages/NotFound'
-import {Routes, Route} from 'react-router-dom'
+import AboutMe from './Pages/AboutMe'
+import Qualifications from './Pages/Qualifications'
+import { Routes, Route } from 'react-router-dom'
+import { Navigate } from "react-router-dom";
 import React from 'react'
 
 const App = () => {
-  
+
   return (
     <>
       <Navbar />
       <Footer />
       <Routes>
+
+        <Route path='/' element={<Navigate to="/Home" />} />
         <Route path='/Home' element={<Home />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/Contact' element={<Contact />}/>
+        <Route path='/About' element={<About />}>
+          <Route path='AboutMe' element={<AboutMe />} />
+          <Route path='Qualifications' element={<Qualifications />} />
+        </Route>
+        <Route path='/Contact' element={<Contact />} />
         <Route path='/Foot' element={<Foot />} />
         <Route path='*' element={<NotFound />} />
-      </Routes>
-      
+      </Routes >
+
 
     </>
   )
