@@ -9,3 +9,14 @@ html, body{
   height: 100%;
   width: 100%;
 }
+.navbar{
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+.nav2{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
